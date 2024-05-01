@@ -31,7 +31,7 @@ Response
 
 User Sign In
 Curl
-curl --location 'http://localhost:3004/sign-in' \
+curl --location 'http://localhost:3000/sign-in' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email": "nitesh.mangla@myparkplus.in",
@@ -59,7 +59,7 @@ curl --location 'http://localhost:3004/sign-in' \
 
 Save Author
 Curl
-curl --location 'http://localhost:3004/api/admin/save-author' \
+curl --location 'http://localhost:3000/api/admin/save-author' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -88,7 +88,7 @@ Response
 
 Save Book
 Curl
-curl --location 'http://localhost:3004/api/admin/save-book/' \
+curl --location 'http://localhost:3000/api/admin/save-book/' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -119,7 +119,7 @@ Response
 
 Get All Books
 Curl
-curl --location --request GET 'http://localhost:3004/api/admin/books' \
+curl --location --request GET 'http://localhost:3000/api/admin/books' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -176,7 +176,7 @@ Response
 
 Book By Id
 Curl
-curl --location --request GET 'http://localhost:3004/api/admin/book/66322df61d7b13884dbd8117' \
+curl --location --request GET 'http://localhost:3000/api/admin/book/66322df61d7b13884dbd8117' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -207,7 +207,7 @@ Response
 
 Update Book
 Curl
-curl --location 'http://localhost:3004/api/admin/update-book/66322df61d7b13884dbd8117' \
+curl --location 'http://localhost:3000/api/admin/update-book/66322df61d7b13884dbd8117' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -237,7 +237,7 @@ curl --location 'http://localhost:3004/api/admin/update-book/66322df61d7b13884db
 
 Inactive Book
 Curl
-curl --location --request POST 'http://localhost:3004/api/admin/delete/66322df61d7b13884dbd8117' \
+curl --location --request POST 'http://localhost:3000/api/admin/delete/66322df61d7b13884dbd8117' \
 --header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
 --data ''
 
