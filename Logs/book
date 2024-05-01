@@ -2455,3 +2455,221 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
   path: 'Author'
 }
+5/1/2024, 6:50:23 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:50:23 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:52:09 PM: error:failed to get book CastError: Cast to ObjectId failed for value "6322df61d7b13884dbd8117" (type string) at path "_id" for model "Book"
+    at SchemaObjectId.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/objectId.js:250:11)
+    at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+    at SchemaType.castForQuery (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1653:17)
+    at cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast.js:375:32)
+    at Query.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4786:12)
+    at Query._castConditions (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2199:10)
+    at model.Query._findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2513:8)
+    at model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:29) {
+  stringValue: '"6322df61d7b13884dbd8117"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: '6322df61d7b13884dbd8117',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/Users/abc/bookmanagement/node_modules/bson/lib/bson.cjs:2297:23)
+      at castObjectId (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/objectId.js:248:12)
+      at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+      at SchemaType.castForQuery (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1653:17)
+      at cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast.js:375:32)
+      at Query.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4786:12)
+      at Query._castConditions (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2199:10)
+      at model.Query._findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2513:8)
+      at model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:80),
+  valueType: 'string',
+  model: Model { Book }
+}
+5/1/2024, 6:52:09 PM: error:failed to get book CastError: Cast to ObjectId failed for value "6322df61d7b13884dbd8117" (type string) at path "_id" for model "Book"
+    at SchemaObjectId.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/objectId.js:250:11)
+    at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+    at SchemaType.castForQuery (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1653:17)
+    at cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast.js:375:32)
+    at Query.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4786:12)
+    at Query._castConditions (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2199:10)
+    at model.Query._findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2513:8)
+    at model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:29) {
+  stringValue: '"6322df61d7b13884dbd8117"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: '6322df61d7b13884dbd8117',
+  path: '_id',
+  reason: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+      at new ObjectId (/Users/abc/bookmanagement/node_modules/bson/lib/bson.cjs:2297:23)
+      at castObjectId (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at SchemaObjectId.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/objectId.js:248:12)
+      at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+      at SchemaType.castForQuery (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1653:17)
+      at cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast.js:375:32)
+      at Query.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4786:12)
+      at Query._castConditions (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2199:10)
+      at model.Query._findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2513:8)
+      at model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:80),
+  valueType: 'string',
+  model: Model { Book }
+}
+5/1/2024, 6:52:39 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:52:39 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:52:49 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:52:49 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:53:45 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:53:45 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:54:07 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:54:07 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:54:31 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:54:31 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}

@@ -622,3 +622,29 @@
   },
   _message: 'book validation failed'
 }
+5/1/2024, 6:50:38 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:50:38 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}

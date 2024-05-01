@@ -49,7 +49,7 @@ exports.saveBook = async (req, res) =>
     }
 }
 
-const validation = async (req) => {
+const validation = async (req, isUpdate = true) => {
     const errors = [];
 
     if(!req?.title){
@@ -64,20 +64,21 @@ const validation = async (req) => {
         errors.push("Publish Date is missing");
     }
 
-    if(!req?.isbn){
-        errors.push("Book isbn is missing");
-    }
-
     const auth = await AuthorModel.findById(req?.author_id)
     if(!auth){
         errors.push("Invalid auth id");
     }
 
-    const isbn = await BookModel.findOne({isbn: req?.isbn})
-    if(isbn){
-        errors.push("Isbn no can't be duplicate");
-    }
+    if(isUpdate){
+        if(!req?.isbn){
+            errors.push("Book isbn is missing");
+        }
 
+        const isbn = await BookModel.findOne({isbn: req?.isbn})
+        if(isbn){
+            errors.push("Isbn no can't be duplicate");
+        }
+    }
     const isValidationFailed = errors.length > 0;
     const msg = isValidationFailed ? errors[0] : '';
 
@@ -87,7 +88,7 @@ const validation = async (req) => {
 exports.updateBook = async (req, res) => {
     try {
         Log("debug", "book", "update book request body", util.inspect(req.body, {depth: null}))
-        const {isValidationFailed, msg} = await validation(req.body);
+        const {isValidationFailed, msg} = await validation(req.body, false);
 
         if (isValidationFailed) {
             return res.status(400).json({

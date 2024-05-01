@@ -21,7 +21,7 @@ This is a simple RESTful API for managing books and authors.
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/your_username/book-management-api.git
+   git clone https://github.com/Nitesh-Mangla/bookish-spork.git
    
 2. Project Structure
 

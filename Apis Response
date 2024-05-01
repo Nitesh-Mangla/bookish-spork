@@ -1,0 +1,261 @@
+User Sign Up
+Curl
+curl --location 'http://localhost:3000/sign-up' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "Nitesh Mangla",
+    "email": "nitesh.mangla@myparkplus.in",
+    "contact_no": 8860315256,
+    "password" :"Nitesh@8860"
+}'
+
+
+Response
+{
+    "success": true,
+    "status": 200,
+    "data": {
+        "name": "Nitesh Mangla",
+        "email": "nitesh.mangla@myparkplus.in",
+        "password": "$2b$10$MBn44p1SaQMNSBdLkD5a/.I/nDvpMx52jN7jxbniV.GBof3rh6GUK",
+        "contact_no": 8860315256,
+        "status": 1,
+        "profile": null,
+        "created_at": "2024-05-01T13:13:13.801Z",
+        "updated_at": "2024-05-01T13:13:13.801Z",
+        "_id": "6632414dc413bcc30b5af5fd",
+        "__v": 0
+    },
+    "message": "User register successfully."
+}
+
+User Sign In
+Curl
+curl --location 'http://localhost:3004/sign-in' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "nitesh.mangla@myparkplus.in",
+    "password" :"Nitesh@8860"
+}'
+
+{
+    "success": false,
+    "status": 200,
+    "message": "User authorized successfully",
+    "data": {
+        "_id": "6632414dc413bcc30b5af5fd",
+        "name": "Nitesh Mangla",
+        "email": "nitesh.mangla@myparkplus.in",
+        "contact_no": 8860315256,
+        "status": 1,
+        "profile": null,
+        "created_at": "2024-05-01T13:13:13.801Z",
+        "updated_at": "2024-05-01T13:13:13.801Z",
+        "__v": 0,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzI0MTRkYzQxM2JjYzMwYjVhZjVmZCIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuaW4iLCJjb250YWN0X25vIjo4ODYwMzE1MjU2LCJpYXQiOjE3MTQ1Njk1OTIsImV4cCI6MTcxNzE2MTU5Mn0.kkRFyvxYZBJOLblV-WvA5TvnyTxF4O0hlljESACRaiA"
+    }
+}
+
+
+Save Author
+Curl
+curl --location 'http://localhost:3004/api/admin/save-author' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Erica Jong",
+    "country" :"Aus",
+    "birth_date" :"1943-09-12"
+}'
+
+
+Response
+{
+    "success": true,
+    "status": 200,
+    "data": {
+        "name": "Erica Jong",
+        "country": "Aus",
+        "birth_date": "1943-09-12T00:00:00.000Z",
+        "created_at": "2024-05-01T13:13:13.852Z",
+        "updated_at": "2024-05-01T13:13:13.852Z",
+        "created_by": "66322589ff79050af82b0bf9",
+        "_id": "663241a6c413bcc30b5af602",
+        "__v": 0
+    },
+    "message": "Auth is created successfully."
+}
+
+Save Book
+Curl
+curl --location 'http://localhost:3004/api/admin/save-book/' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title" :"When Breath Becomes chunp test",
+    "author_id": "6632293961e2b5ace874a498",
+    "published_date": "1995-04-23",
+    "isbn" :"9781234567890"
+}'
+
+Response
+{
+    "success": true,
+    "status": 200,
+    "data": {
+        "title": "When Breath Becomes chunp test",
+        "author_id": "6632293961e2b5ace874a498",
+        "published_date": "1995-04-23T00:00:00.000Z",
+        "isbn": "9781234567890",
+        "status": 1,
+        "created_at": "2024-05-01T12:38:44.278Z",
+        "updated_at": "2024-05-01T12:38:44.278Z",
+        "created_by": "66322589ff79050af82b0bf9",
+        "_id": "663237de5808d843ae2a092f",
+        "__v": 0
+    },
+    "message": "Book is created successfully."
+}
+
+Get All Books
+Curl
+curl --location --request GET 'http://localhost:3004/api/admin/books' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title" :"When Breath Becomes Air",
+    "author_id": "6632293961e2b5ace874a498",
+    "published_date": "1995-04-23",
+    "isbn" :"9781234567897"
+}'
+
+Response
+{
+    "success": false,
+    "status": 200,
+    "message": "Book fetched.",
+    "data": [
+        {
+            "_id": "66322df61d7b13884dbd8117",
+            "title": "When Breath Becomes Air 1",
+            "author_id": "6632293961e2b5ace874a498",
+            "published_date": "1995-04-23T00:00:00.000Z",
+            "isbn": "9781234567897",
+            "status": 2,
+            "created_at": "2024-05-01T11:56:37.783Z",
+            "updated_at": "2024-05-01T11:56:37.783Z",
+            "created_by": "66322589ff79050af82b0bf9",
+            "__v": 0
+        },
+        {
+            "_id": "6632332dda95aa2661fc6a8d",
+            "title": "When Breath Becomes chunp",
+            "author_id": "6632293961e2b5ace874a498",
+            "published_date": "1995-04-23T00:00:00.000Z",
+            "isbn": "9781234567891",
+            "status": 1,
+            "created_at": "2024-05-01T12:18:52.298Z",
+            "updated_at": "2024-05-01T12:18:52.298Z",
+            "created_by": "66322589ff79050af82b0bf9",
+            "__v": 0
+        },
+        {
+            "_id": "663237de5808d843ae2a092f",
+            "title": "When Breath Becomes chunp test",
+            "author_id": "6632293961e2b5ace874a498",
+            "published_date": "1995-04-23T00:00:00.000Z",
+            "isbn": "9781234567890",
+            "status": 1,
+            "created_at": "2024-05-01T12:38:44.278Z",
+            "updated_at": "2024-05-01T12:38:44.278Z",
+            "created_by": "66322589ff79050af82b0bf9",
+            "__v": 0
+        }
+    ]
+}
+
+Book By Id
+Curl
+curl --location --request GET 'http://localhost:3004/api/admin/book/66322df61d7b13884dbd8117' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title" :"When Breath Becomes Air",
+    "author_id": "6632293961e2b5ace874a498",
+    "published_date": "1995-04-23",
+    "isbn" :"9781234567897"
+}'
+
+Response
+{
+    "success": false,
+    "status": 200,
+    "message": "Book fetched.",
+    "data": {
+        "_id": "66322df61d7b13884dbd8117",
+        "title": "When Breath Becomes Air 1",
+        "author_id": "6632293961e2b5ace874a498",
+        "published_date": "1995-04-23T00:00:00.000Z",
+        "isbn": "9781234567897",
+        "status": 2,
+        "created_at": "2024-05-01T11:56:37.783Z",
+        "updated_at": "2024-05-01T11:56:37.783Z",
+        "created_by": "66322589ff79050af82b0bf9",
+        "__v": 0
+    }
+}
+
+Update Book
+Curl
+curl --location 'http://localhost:3004/api/admin/update-book/66322df61d7b13884dbd8117' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title" :"When Breath Becomes Air 1",
+    "author_id": "6632293961e2b5ace874a498",
+    "published_date": "1995-04-23"
+}'
+
+
+{
+    "success": false,
+    "status": 400,
+    "message": "Book updated.",
+    "data": {
+        "_id": "66322df61d7b13884dbd8117",
+        "title": "When Breath Becomes Air 1",
+        "author_id": "6632293961e2b5ace874a498",
+        "published_date": "1995-04-23T00:00:00.000Z",
+        "isbn": "9781234567897",
+        "status": 2,
+        "created_at": "2024-05-01T11:56:37.783Z",
+        "updated_at": "2024-05-01T11:56:37.783Z",
+        "created_by": "66322589ff79050af82b0bf9",
+        "__v": 0
+    }
+}
+
+Inactive Book
+Curl
+curl --location --request POST 'http://localhost:3004/api/admin/delete/66322df61d7b13884dbd8117' \
+--header 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MzIyNTg5ZmY3OTA1MGFmODJiMGJmOSIsIm5hbWUiOiJOaXRlc2ggTWFuZ2xhIiwiZW1haWwiOiJuaXRlc2gubWFuZ2xhQG15cGFya3BsdXMuY29tIiwiY29udGFjdF9ubyI6ODg2MDMxNTI1NiwiaWF0IjoxNzE0NTYyNTI1LCJleHAiOjE3MTcxNTQ1MjV9.xXKLy4O2264pOYPOzY6H5h7PigCXHqsNPNVq3SM16Ls' \
+--data ''
+
+
+{
+    "success": false,
+    "status": 200,
+    "message": "Book is inactive.",
+    "data": {
+        "_id": "66322df61d7b13884dbd8117",
+        "title": "When Breath Becomes Air 1",
+        "author_id": "6632293961e2b5ace874a498",
+        "published_date": "1995-04-23T00:00:00.000Z",
+        "isbn": "9781234567897",
+        "status": 2,
+        "created_at": "2024-05-01T11:56:37.783Z",
+        "updated_at": "2024-05-01T11:56:37.783Z",
+        "created_by": "66322589ff79050af82b0bf9",
+        "__v": 0
+    }
+}
