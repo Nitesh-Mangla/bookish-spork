@@ -1,0 +1,2457 @@
+
+5/1/2024, 5:10:02 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:10:28 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:10:28 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:10:29 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:10:29 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:11:24 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:11:24 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:11:24 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:11:24 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:11:53 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:11:53 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:11:53 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:11:53 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:22:35 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:22:35 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:22:35 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:22:35 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:23:13 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:23:13 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:23:13 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:23:13 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:43:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:23:36 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:23:36 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:08 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:08 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:08 PM: error:failed to create book Error: book validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:26:08 PM: error:failed to create book Error: book validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:26:19 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:19 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:19 PM: error:failed to create book Error: book validation failed: created_by: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: CastError: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+        at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:380:11)
+        at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+        at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+        at Array.map (<anonymous>)
+        at Function.create (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2946:34) {
+      stringValue: '"66322589ff79050af82b0bf9"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '66322589ff79050af82b0bf9',
+      path: 'created_by',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/number.js:27:10)
+          at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:378:12)
+          at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+          at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+          at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+          at Array.map (<anonymous>) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:26:19 PM: error:failed to create book Error: book validation failed: created_by: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: CastError: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+        at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:380:11)
+        at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+        at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+        at Array.map (<anonymous>)
+        at Function.create (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2946:34) {
+      stringValue: '"66322589ff79050af82b0bf9"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '66322589ff79050af82b0bf9',
+      path: 'created_by',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/number.js:27:10)
+          at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:378:12)
+          at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+          at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+          at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+          at Array.map (<anonymous>) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:26:38 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:26:38 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:29:25 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:29:25 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:30:29 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:30:29 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:31:21 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:31:21 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:31:59 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:31:59 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:34 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:34 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:40 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:40 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:43 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:32:43 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:33:47 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:33:47 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:33:54 PM: error:failed to get book StrictPopulateError: Cannot populate path `authors` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'authors'
+}
+5/1/2024, 5:33:54 PM: error:failed to get book StrictPopulateError: Cannot populate path `authors` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'authors'
+}
+5/1/2024, 5:33:58 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:33:58 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:34:34 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:34:34 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:34:42 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:34:42 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:35:42 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:35:42 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:37:19 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:37:19 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:40:34 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:40:34 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:40:52 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:40:52 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:41:02 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:41:02 PM: debug:update book request body {
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:43:15 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:43:15 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:43:37 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:43:37 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:12 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:12 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:12 PM: error:failed to update book TypeError: BookModel.updateById is not a function
+    at exports.updateBook (/Users/abc/bookmanagement/Controllers/Book.js:109:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+5/1/2024, 5:44:12 PM: error:failed to update book TypeError: BookModel.updateById is not a function
+    at exports.updateBook (/Users/abc/bookmanagement/Controllers/Book.js:109:44)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+5/1/2024, 5:44:37 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:37 PM: debug:update book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:42 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:44:42 PM: debug:update book request body {
+  title: 'When Breath Becomes Air 1',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:45:56 PM: error:failed to inactive book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:45:56 PM: error:failed to inactive book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:48:32 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:32 PM: debug:create book request body {
+  title: 'When Breath Becomes Air',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567897',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:42 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:42 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:53 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:53 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:56 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:56 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:48:56 PM: error:failed to create book MongoServerError: E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }
+    at InsertOneOperation.execute (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/execute_operation.js:126:16) {
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    keyPattern: { isbn: 1 },
+    keyValue: { isbn: '9781234567891' },
+    errmsg: 'E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }'
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { isbn: 1 },
+  keyValue: { isbn: '9781234567891' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+5/1/2024, 5:48:56 PM: error:failed to create book MongoServerError: E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }
+    at InsertOneOperation.execute (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/execute_operation.js:126:16) {
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    keyPattern: { isbn: 1 },
+    keyValue: { isbn: '9781234567891' },
+    errmsg: 'E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }'
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { isbn: 1 },
+  keyValue: { isbn: '9781234567891' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+5/1/2024, 5:49:11 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:49:11 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:49:11 PM: error:failed to create book MongoServerError: E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }
+    at InsertOneOperation.execute (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/execute_operation.js:126:16) {
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    keyPattern: { isbn: 1 },
+    keyValue: { isbn: '9781234567891' },
+    errmsg: 'E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }'
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { isbn: 1 },
+  keyValue: { isbn: '9781234567891' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+5/1/2024, 5:49:11 PM: error:failed to create book MongoServerError: E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }
+    at InsertOneOperation.execute (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async executeOperation (/Users/abc/bookmanagement/node_modules/mongodb/lib/operations/execute_operation.js:126:16) {
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    keyPattern: { isbn: 1 },
+    keyValue: { isbn: '9781234567891' },
+    errmsg: 'E11000 duplicate key error collection: book_management.books index: isbn_1 dup key: { isbn: "9781234567891" }'
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { isbn: 1 },
+  keyValue: { isbn: '9781234567891' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+5/1/2024, 5:49:51 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:49:51 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567891',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:50:33 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:50:33 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:52:10 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:52:10 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:54:24 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:54:24 PM: error:failed to get book StrictPopulateError: Cannot populate path `author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'author'
+}
+5/1/2024, 5:54:58 PM: error:failed to get book TypeError: utils.populate: invalid path. Expected string. Got typeof `object`
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/utils.js:540:11)
+    at Query.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4653:30)
+    at exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:62)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abc/bookmanagement/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:376:14)
+5/1/2024, 5:54:58 PM: error:failed to get book TypeError: utils.populate: invalid path. Expected string. Got typeof `object`
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/utils.js:540:11)
+    at Query.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4653:30)
+    at exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:62)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abc/bookmanagement/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:376:14)
+5/1/2024, 5:59:50 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 5:59:50 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:00:04 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:00:04 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:00:18 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:00:18 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:00:38 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at model.Query._find (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2282:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:63)
+    at async exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:29) {
+  path: 'Author'
+}
+5/1/2024, 6:00:38 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at model.Query._find (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2282:20)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async model.Query.exec (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:4330:63)
+    at async exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:29) {
+  path: 'Author'
+}
+5/1/2024, 6:01:04 PM: error:failed to get book ObjectParameterError: Parameter "filter" to findOne() must be an object, got "66322df61d7b13884dbd8117" (type string)
+    at Query.findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2592:16)
+    at Function.findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2358:13)
+    at exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:45)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abc/bookmanagement/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:376:14)
+5/1/2024, 6:01:04 PM: error:failed to get book ObjectParameterError: Parameter "filter" to findOne() must be an object, got "66322df61d7b13884dbd8117" (type string)
+    at Query.findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2592:16)
+    at Function.findOne (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2358:13)
+    at exports.byId (/Users/abc/bookmanagement/Controllers/Book.js:151:45)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/Users/abc/bookmanagement/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/Users/abc/bookmanagement/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/abc/bookmanagement/node_modules/express/lib/router/index.js:284:15
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:365:14)
+    at param (/Users/abc/bookmanagement/node_modules/express/lib/router/index.js:376:14)
+5/1/2024, 6:05:19 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:05:19 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:08:54 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp test',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567890',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:08:54 PM: debug:create book request body {
+  title: 'When Breath Becomes chunp test',
+  author_id: '6632293961e2b5ace874a498',
+  published_date: '1995-04-23',
+  isbn: '9781234567890',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 6:10:28 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:10:28 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:25:40 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}
+5/1/2024, 6:25:40 PM: error:failed to get book StrictPopulateError: Cannot populate path `Author` because it is not in your schema. Set the `strictPopulate` option to false to override.
+    at getModelsMapForPopulate (/Users/abc/bookmanagement/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:50:12)
+    at populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4453:21)
+    at _populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4413:5)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4385:5
+    at new Promise (<anonymous>)
+    at Function.populate (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4384:10)
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:2471:11
+    at /Users/abc/bookmanagement/node_modules/mongoose/lib/query.js:3136:21
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+  path: 'Author'
+}

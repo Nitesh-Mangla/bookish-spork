@@ -1,0 +1,624 @@
+
+5/1/2024, 4:55:47 PM: debug:create author request body {}
+5/1/2024, 4:55:58 PM: debug:create author request body {}
+5/1/2024, 4:55:58 PM: debug:create author request body {}
+5/1/2024, 4:56:34 PM: debug:create author request body {}
+5/1/2024, 4:56:34 PM: debug:create author request body {}
+5/1/2024, 4:56:42 PM: debug:create author request body {}
+5/1/2024, 4:56:42 PM: debug:create author request body {}
+5/1/2024, 4:56:55 PM: debug:create author request body {}
+5/1/2024, 4:56:55 PM: debug:create author request body {}
+5/1/2024, 4:57:30 PM: debug:create author request body {}
+5/1/2024, 4:57:30 PM: debug:create author request body {}
+5/1/2024, 4:57:50 PM: debug:create author request body {}
+5/1/2024, 4:57:50 PM: debug:create author request body {}
+5/1/2024, 5:00:22 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:00:22 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:00:22 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:40:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:00:22 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:40:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:01:05 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:01:05 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:01:05 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:01:05 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:03:54 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:03:54 PM: debug:create author request body { name: 'Erica Jong', country: 'Aus', birth_date: '1943-09-12' }
+5/1/2024, 5:03:54 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:03:54 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:04:44 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:04:44 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:04:44 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:04:44 PM: error:failed to create author Error: author validation failed: created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:41:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:06:02 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:06:02 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:06:02 PM: error:failed to create author Error: author validation failed: created_by: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:40:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: CastError: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+        at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:380:11)
+        at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+        at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+        at Array.map (<anonymous>)
+        at Function.create (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2946:34) {
+      stringValue: '"66322589ff79050af82b0bf9"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '66322589ff79050af82b0bf9',
+      path: 'created_by',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/number.js:27:10)
+          at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:378:12)
+          at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+          at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+          at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+          at Array.map (<anonymous>) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:06:02 PM: error:failed to create author Error: author validation failed: created_by: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.save (/Users/abc/bookmanagement/Controllers/Author.js:40:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    created_by: CastError: Cast to Number failed for value "66322589ff79050af82b0bf9" (type string) at path "created_by"
+        at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:380:11)
+        at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+        at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+        at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+        at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+        at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+        at Array.map (<anonymous>)
+        at Function.create (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2946:34) {
+      stringValue: '"66322589ff79050af82b0bf9"',
+      messageFormat: undefined,
+      kind: 'Number',
+      value: '66322589ff79050af82b0bf9',
+      path: 'created_by',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber (/Users/abc/bookmanagement/node_modules/mongoose/lib/cast/number.js:27:10)
+          at SchemaNumber.cast (/Users/abc/bookmanagement/node_modules/mongoose/lib/schema/number.js:378:12)
+          at SchemaType.applySetters (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1236:12)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1421:22)
+          at model.$set (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:1117:16)
+          at model.Document (/Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:166:12)
+          at model.Model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:131:12)
+          at new model (/Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:4819:15)
+          at /Users/abc/bookmanagement/node_modules/mongoose/lib/model.js:2958:20
+          at Array.map (<anonymous>) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  _message: 'author validation failed'
+}
+5/1/2024, 5:06:25 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:06:25 PM: debug:create author request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:08:57 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:08:57 PM: debug:create book request body {
+  name: 'Erica Jong',
+  country: 'Aus',
+  birth_date: '1943-09-12',
+  user_details: {
+    id: '66322589ff79050af82b0bf9',
+    name: 'Nitesh Mangla',
+    email: 'nitesh.mangla@myparkplus.com',
+    contact_no: 8860315256,
+    iat: 1714562525,
+    exp: 1717154525
+  }
+}
+5/1/2024, 5:08:57 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:62)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
+5/1/2024, 5:08:57 PM: error:failed to create book Error: book validation failed: title: Path `title` is required., published_date: Path `published_date` is required., isbn: Path `isbn` is required., created_by: Path `created_by` is required.
+    at ValidationError.inspect (/Users/abc/bookmanagement/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at Object.inspect (node:internal/util/inspect:364:10)
+    at exports.saveBook (/Users/abc/bookmanagement/Controllers/Book.js:42:62)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `title` is required.',
+        type: 'required',
+        path: 'title',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    published_date: ValidatorError: Path `published_date` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `published_date` is required.',
+        type: 'required',
+        path: 'published_date',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'published_date',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    isbn: ValidatorError: Path `isbn` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `isbn` is required.',
+        type: 'required',
+        path: 'isbn',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'isbn',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    },
+    created_by: ValidatorError: Path `created_by` is required.
+        at validate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1385:13)
+        at SchemaType.doValidate (/Users/abc/bookmanagement/node_modules/mongoose/lib/schemaType.js:1369:7)
+        at /Users/abc/bookmanagement/node_modules/mongoose/lib/document.js:3042:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: {
+        validator: [Function (anonymous)],
+        message: 'Path `created_by` is required.',
+        type: 'required',
+        path: 'created_by',
+        fullPath: undefined,
+        value: undefined
+      },
+      kind: 'required',
+      path: 'created_by',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose#validatorError)]: true
+    }
+  },
+  _message: 'book validation failed'
+}
