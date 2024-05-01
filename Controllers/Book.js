@@ -230,3 +230,40 @@ exports.getAll = async (req, res) => {
     }
 }
 
+exports.filter = async (req, res) => {
+    try {
+        const { year, author } = req.query;
+        if (year) {
+            const startOfYear = new Date(year, 0, 1);
+            const endOfYear = new Date(year, 11, 31);
+            const result = await BookModel.find({published_date: { $gte: startOfYear, $lte: endOfYear }})
+            return res.status(200).json({
+                success: false,
+                status: 200,
+                message: "Book fetched.",
+                data: result
+            })
+        }
+
+        // console.log(result);
+        //
+        if (author) {
+            const authorObj = await AuthorModel.findOne({ name: author });
+            if (!authorObj) return res.status(200).json({
+                success: false,
+                status: 200,
+                message: "Author not found.",
+                data: []
+            });
+        }
+    } catch(e){
+        Log('error', 'book', "failed to filter book", util.inspect(e, {depth: null}))
+        return res.status(500).json({
+            success: false,
+            status: 500,
+            message: e.message,
+            data: []
+        })
+    }
+}
+

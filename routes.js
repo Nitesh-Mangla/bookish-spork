@@ -4,7 +4,7 @@ const bodyParse = require("body-parser")
 const {tokenValidate, validateHeader} = require('./Middlewares/TokenVerify')
 const {userCreate, userLogin} = require('./Controllers/User')
 const {save, getAllAuthor} = require("./Controllers/Author")
-const {saveBook, updateBook, byId, inActiveBook, getAll} = require("./Controllers/Book")
+const {saveBook, updateBook, byId, inActiveBook, getAll, filter} = require("./Controllers/Book")
 
 router.use(bodyParse.json())
 
@@ -19,7 +19,8 @@ router.post("/api/admin/save-book", saveBook)
 router.post("/api/admin/update-book/:id", updateBook)
 router.get('/api/admin/book/:id', byId)
 router.post("/api/admin/delete/:id", inActiveBook)
-router.get("/api/admin/books", getAll)
+router.get("/api/books", getAll)
+router.get("/api/filter", filter)
 
 router.get("*", (req, res) => {
     res.render('404', {

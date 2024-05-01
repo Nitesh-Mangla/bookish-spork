@@ -58,7 +58,9 @@ bookmanagement/
 4. In the project directory, you can run:
    nodemon server.js
 
-5. API Endpoints
+5. Change mongodb credentials in .env
+
+6. API Endpoints
 Books
 GET /api/admin/books: Get all books
 GET /api/admin/book/:id: Get a single book by ID
@@ -66,7 +68,7 @@ POST /api/admin/save-book: Add a new book
 post /api/admin/update-book/:id: Update a book by ID
 DELETE /api/admin/delete/:id: Delete a book by ID
 
-6. Authors
+7. Authors
 GET /api/authors: Get all authors
 POST /api/save-author: Add a new author
 
