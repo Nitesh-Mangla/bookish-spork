@@ -72,3 +72,5 @@ DELETE /api/admin/delete/:id: Delete a book by ID
 GET /api/authors: Get all authors
 POST /api/save-author: Add a new author
 
+8. Give Mongo DB credentials in .env file.
+
